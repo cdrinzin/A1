@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CossiePlay</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</head>
+
+<body>
+	<header>
+    	<span class="blinking"><h1>COSSIE PLAY</h1></span>
+    </header>
+    <nav>
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="pricelist.html">Price List</a></li>
+            <li><a href="sign_up.html">Sign Up</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="links.html">Links</a></li>
+         </ul>
+    </nav>
+<div id="col1" class="col1">
+<div class="marquee">
+	<p><a href="#">Cool CossiePlay OFFERS </a></p>
+</div>
+    <h2>Welcome to the CossiePlay </h2>
+ <p> Cosplay, a portmanteau of the words costume play, is a performance art in which participants called cosplayers wear costumes and fashion accessories to represent a specific character. Cosplayers often interact to create a subculture and a broader use of the term "cosplay" applies to any costumed role-playing in venues apart from the stage. Any entity that lends itself to dramatic interpretation may be taken up as a subject and it is not unusual to see genders switched. Favorite sources include manga and anime, comic books and cartoons, video games, and live-action films and television series.<span id="dots">...</span><span id="more">
+
+The rapid growth in the number of people cosplaying as a hobby since 1990 has made the phenomenon a significant aspect of popular culture in Japan and some other parts of Asia and in the Western world. Cosplay events are common features of fan conventions and there are also dedicated conventions and local and international competitions, as well as social networks, websites and other forms of media centered on cosplay activities.
+Reproduced from https://en.wikipedia.org/wiki/Cosplay.</span></p> <button onclick="myFunction()" id="myBtn">Read more</button>
+
+<div class="marquee">
+	<p>Wanna Party? Read the Guidlines To <a href="#"> PARTY HARD & SIGN-UP </a></p>
+</div>
+
+</div>
+
+    <div id="col2" class="col2">
+    <div class="slider">
+  <div class="slide1"></div>
+  <div class="slide2"></div>
+  <div class="slide3"></div>
+</div>
+    </div>
+    
+<footer>Designed @2019</footer>
+</body>
+</html>
